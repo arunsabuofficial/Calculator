@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <script src="script.js" defer></script>
+    <style>
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      .calculator {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        height: 225px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 20vh 10vw;
+        border: 5px solid;
+        grid-row-end: span 3;
+        margin-top: 0%;
+        width: 70%;
+      }
+
+      .result {
+        background-color: aqua;
+        margin: 0 10vw;
+        border: 5px solid;
+        border-bottom: 0;
+        margin-top: 200px;
+        text-align: center;
+        font-size: 60px;
+        grid-template-columns: auto;
+        width: 70%;
+      }
+
+      .grid-item {
+        text-align: center;
+
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="result" value="" disabled />
+    <div class="grid-container">
+      <button><div class="grid-item" value="7">7</div></button>
+      <button><div class="grid-item" value="8">8</div></button>
+      <button><div class="grid-item" value="9">9</div></button>
+      <button><div class="grid-item" value="-1">CE</div></button>
+      <button><div class="grid-item" value="4">4</div></button>
+      <button><div class="grid-item" value="5">5</div></button>
+      <button><div class="grid-item" value="6">6</div></button>
+      <button><div class="grid-item" value="+">+</div></button>
+      <button><div class="grid-item" value="1">1</div></button>
+      <button><div class="grid-item" value="2">2</div></button>
+      <button><div class="grid-item" value="3">3</div></button>
+      <button><div class="grid-item" value="-">-</div></button>
+      <button><div class="grid-item" value="0">0</div></button>
+      <button><div class="grid-item" value="*">*</div></button>
+      <button><div class="grid-item" value="/">/</div></button>
+      <button><div class="grid-item" value="=">=</div></button>
+    </div>
+  </body>
+</html>
